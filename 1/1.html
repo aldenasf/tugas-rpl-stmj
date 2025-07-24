@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Luas persegi //
+        let p = 4;
+        let l = 8;
+
+        let luas = p * l;
+        let keliling = (2 * p) + (2 * l);
+
+        console.log(`luas: ${luas} | keliling: ${keliling}`)
+
+        // Jumlah & rata-rata 3 bilangan //
+        let x = 3;
+        let y = 5;
+        let z = 7;
+
+        let sum = x + y + z;
+        let avg = sum / 3;
+
+        console.log(`sum: ${sum} | avg: ${avg}`);
+
+        // Menghitung nilai //
+        let jumlah_soal = 100;
+        let jawaban_benar = 90;
+        let jawaban_salah = 7;
+
+        let nilai = (jawaban_benar - jawaban_salah) / jumlah_soal;
+        let predikat = "";
+
+        if (nilai >= 0.8) {
+            predikat = "sangat baik";
+        } else {
+            predikat = "baik";
+        }
+
+        console.log(`nilai: ${nilai} | predikat: ${predikat}`);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penilaian</title>
+</head>
+
+<body>
+    <script>
+        /* Pseudocode:
+        START
+        INPUT jumlah_soal, jawaban_benar, jawaban_salah
+        PROCESS nilai <- (jawaban_benar - jawaban_salah) / jumlah_soal;
+        IF nilai >= 0.8 THEN
+            PROCESS predikat = "sangat baik"
+        ELSE
+            PROCESS predikat = "baik"
+        OUTPUT nilai, predikat
+        END
+        */
+
+        let jumlah_soal = 100;
+        let jawaban_benar = 90;
+        let jawaban_salah = 7;
+
+        let nilai = (jawaban_benar - jawaban_salah) / jumlah_soal;
+        let predikat = "";
+
+        if (nilai >= 0.8) {
+            predikat = "sangat baik";
+        } else {
+            predikat = "baik";
+        }
+
+        console.log(`nilai: ${nilai} | predikat: ${predikat}`);
+    </script>
+</body>
+
+</html>

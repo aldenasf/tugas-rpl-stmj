@@ -1,0 +1,41 @@
+# KELILING BUJUR SANGKAR
+MULAI
+INPUT sisi
+HITUNG keliling = 4 * sisi
+OUTPUT luas
+SELESAI
+
+# LUAS BUJUR SANGKAR
+MULAI
+INPUT sisi
+HITUNG luas = sisi * sisi
+OUTPUT luas
+SELESAI
+
+# KELILING & LUAS BUJUR SANGKAR
+MULAI
+INPUT sisi, target
+JIKA target == keliling MAKA
+HITUNG keliling = 4 * sisi
+OUTPUT keliling
+LAIN JIKA target == luas MAKA
+HITUNG luas = sisi * sisi
+OUTPUT luas
+SELESAI
+
+# 
+START
+INPUT tugas, uts, uas
+PROCESS avg <- (tugas + uts + uas) / 3
+IF avg <= 25 MAKA
+    PROCESS predikat <- "cukup kurang"
+ELSE IF avg <= 50 MAKA
+    PROCESS predikat <- "cukup baik"
+ELSE IF avg <= 75 MAKA
+    PROCESS predikat <- "baik"
+ELSE IF avg <= 100 MAKA
+    PROCESS predikat <- "sangat baik"
+ELSE
+    PROCESS predikat <- "nilai tidak valid"
+OUTPUT avg, predikat
+END
