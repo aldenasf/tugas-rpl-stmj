@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penilaian Tugas UTS UAS</title>
+</head>
+
+<body>
+    <script>
+        /* Pseudocode
+        START
+        INPUT tugas, uts, uas
+        PROCESS avg <- (tugas + uts + uas) / 3
+        IF avg <= 25 THEN
+            PROCESS predikat <- "cukup kurang"
+        ELSE IF avg <= 50 THEN
+            PROCESS predikat <- "cukup baik"
+        ELSE IF avg <= 75 THEN
+            PROCESS predikat <- "baik"
+        ELSE IF avg <= 100 THEN
+            PROCESS predikat <- "sangat baik"
+        ELSE
+            PROCESS predikat <- "nilai tidak valid"
+        OUTPUT avg, predikat
+        END 
+        */
+
+        let tugas = 90;
+        let uts = 84;
+        let uas = 88;
+
+        let avg = (tugas + uts + uas) / 3;
+        let predikat = "";
+
+        if (avg <= 25) {
+            predikat = "cukup kurang"
+        } else if (avg <= 50) {
+            predikat = "cukup baik"
+        } else if (avg <= 75) {
+            predikat = "baik"
+        } else if (avg <= 100) {
+            predikat = "sangat baik"
+        } else {
+            predikat = "nilai tidak valid"
+        }
+
+        console.log(`avg: ${avg} | predikat: ${predikat}`)
+    </script>
+</body>
+
+</html>
