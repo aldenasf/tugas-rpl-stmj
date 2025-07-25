@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="umur-tahun"/>
+        <attribute name="authors" value="aldenasf"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-07-25 10:35:32 AM"/>
+        <attribute name="created" value="YWxkZW5hc2Y7REVTS1RPUC1STFU1UEgzOzIwMjUtMDctMjU7MTA6MTc6MTQgQU07MzE3OA=="/>
+        <attribute name="edited" value="YWxkZW5hc2Y7REVTS1RPUC1STFU1UEgzOzIwMjUtMDctMjU7MTA6MzU6MzIgQU07MjszMjg3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="umur, tahun" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukkan tahun lahir&quot;" newline="True"/>
+            <input variable="tahun"/>
+            <assign variable="umur" expression="2025 - tahun"/>
+            <output expression="umur" newline="True"/>
+            <if expression="umur &lt;= 18">
+                <then>
+                    <output expression="&quot;Anak-anak&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Dewasa&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

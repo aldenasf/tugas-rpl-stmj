@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ulang"/>
+        <attribute name="authors" value="aldenasf"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-07-25 09:24:37 AM"/>
+        <attribute name="created" value="YWxkZW5hc2Y7REVTS1RPUC1STFU1UEgzOzIwMjUtMDctMjU7MDk6MjI6MjYgQU07MzE4NQ=="/>
+        <attribute name="edited" value="YWxkZW5hc2Y7REVTS1RPUC1STFU1UEgzOzIwMjUtMDctMjU7MDk6MjQ6MzcgQU07MTszMjk3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ulang" type="Boolean" array="False" size=""/>
+            <do expression="ulang">
+                <declare name="bil, sisa" type="Integer" array="False" size=""/>
+                <output expression="&quot;masukkan bilangan&quot;" newline="True"/>
+                <input variable="bil"/>
+                <assign variable="sisa" expression="bil % 2"/>
+                <if expression="sisa = 0">
+                    <then>
+                        <output expression="&quot;genap&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;ganjil&quot;" newline="True"/>
+                    </else>
+                </if>
+                <output expression="&quot;ulangi?&quot;" newline="True"/>
+                <input variable="ulang"/>
+            </do>
+        </body>
+    </function>
+</flowgorithm>

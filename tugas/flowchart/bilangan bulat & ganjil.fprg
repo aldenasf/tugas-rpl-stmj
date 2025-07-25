@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="bilangan bulat &amp; ganjil"/>
+        <attribute name="authors" value="aldenasf"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-07-25 01:25:15 PM"/>
+        <attribute name="created" value="YWxkZW5hc2Y7REVTS1RPUC1STFU1UEgzOzIwMjUtMDctMjU7MDE6MjM6MzggUE07MzE5Ng=="/>
+        <attribute name="edited" value="YWxkZW5hc2Y7REVTS1RPUC1STFU1UEgzOzIwMjUtMDctMjU7MDE6MjU6MTUgUE07MTszMzAx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="bil, sisa" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukkan bilangan&quot;" newline="True"/>
+            <input variable="bil"/>
+            <assign variable="sisa" expression="bil % 2"/>
+            <if expression="sisa = 0">
+                <then>
+                    <output expression="&quot;Genap&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Ganjil&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

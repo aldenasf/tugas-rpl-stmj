@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="suhu"/>
+        <attribute name="authors" value="aldenasf"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-07-25 01:21:17 PM"/>
+        <attribute name="created" value="YWxkZW5hc2Y7REVTS1RPUC1STFU1UEgzOzIwMjUtMDctMjU7MDE6MTc6MDkgUE07MzE5Nw=="/>
+        <attribute name="edited" value="YWxkZW5hc2Y7REVTS1RPUC1STFU1UEgzOzIwMjUtMDctMjU7MDE6MjE6MTcgUE07MTszMjk5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="suhuC, suhuF, suhuK" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukkan suhu (C)&quot;" newline="True"/>
+            <input variable="suhuC"/>
+            <assign variable="suhuF" expression="(suhuC * (9/5)) + 32"/>
+            <assign variable="suhuK" expression="suhuC + 273.15"/>
+            <output expression="&quot;Fahrenheit: &quot; &amp; suhuF" newline="True"/>
+            <output expression="&quot;Kelvin: &quot; &amp; suhuK" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

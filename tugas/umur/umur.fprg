@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="umur"/>
+        <attribute name="authors" value="aldenasf"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-07-25 10:17:12 AM"/>
+        <attribute name="created" value="YWxkZW5hc2Y7REVTS1RPUC1STFU1UEgzOzIwMjUtMDctMjU7MTA6MTA6MTIgQU07MzE2OQ=="/>
+        <attribute name="edited" value="YWxkZW5hc2Y7REVTS1RPUC1STFU1UEgzOzIwMjUtMDctMjU7MTA6MTc6MTIgQU07MTszMjg0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="umur" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukan umur&quot;" newline="True"/>
+            <input variable="umur"/>
+            <if expression="umur &lt;= 18">
+                <then>
+                    <output expression="&quot;Anak-anak&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Dewasa&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

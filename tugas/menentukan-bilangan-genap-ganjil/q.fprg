@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="q"/>
+        <attribute name="authors" value="aldenasf"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-07-25 09:14:57 AM"/>
+        <attribute name="created" value="YWxkZW5hc2Y7REVTS1RPUC1STFU1UEgzOzIwMjUtMDctMjU7MDg6NTI6MjIgQU07MzE4Mw=="/>
+        <attribute name="edited" value="YWxkZW5hc2Y7REVTS1RPUC1STFU1UEgzOzIwMjUtMDctMjU7MDk6MTQ6NTYgQU07MTszMjk3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="bil, sisa" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukkan angka: &quot;" newline="True"/>
+            <input variable="bil"/>
+            <assign variable="sisa" expression="bil % 2"/>
+            <if expression="sisa = 0">
+                <then>
+                    <output expression="&quot;genap&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;ganjil&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

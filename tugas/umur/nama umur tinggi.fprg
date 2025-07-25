@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="nama umur tinggi"/>
+        <attribute name="authors" value="aldenasf"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-07-25 10:55:40 AM"/>
+        <attribute name="created" value="YWxkZW5hc2Y7REVTS1RPUC1STFU1UEgzOzIwMjUtMDctMjU7MTA6MzU6MzMgQU07MzE3OQ=="/>
+        <attribute name="edited" value="YWxkZW5hc2Y7REVTS1RPUC1STFU1UEgzOzIwMjUtMDctMjU7MTA6NTU6NDAgQU07MzszMjg5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nama" type="String" array="False" size=""/>
+            <declare name="umur, tinggi" type="Integer" array="False" size=""/>
+            <output expression="&quot;Nama: &quot;" newline="True"/>
+            <input variable="nama"/>
+            <output expression="&quot;Umur: &quot;" newline="True"/>
+            <input variable="umur"/>
+            <output expression="&quot;Tinggi badan (cm): &quot;" newline="True"/>
+            <input variable="tinggi"/>
+            <output expression="&quot;Nama saya &quot; &amp; nama" newline="True"/>
+            <output expression="&quot;Umur saya &quot; &amp; umur &amp; &quot; tahun&quot;" newline="True"/>
+            <output expression="&quot;Tinggi badan saya &quot; &amp; tinggi &amp; &quot;cm&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

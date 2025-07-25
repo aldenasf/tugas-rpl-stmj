@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="luas lingkaran"/>
+        <attribute name="authors" value="aldenasf"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-07-25 01:36:59 PM"/>
+        <attribute name="created" value="YWxkZW5hc2Y7REVTS1RPUC1STFU1UEgzOzIwMjUtMDctMjU7MDE6MTQ6MjggUE07MzE5NQ=="/>
+        <attribute name="edited" value="YWxkZW5hc2Y7REVTS1RPUC1STFU1UEgzOzIwMjUtMDctMjU7MDE6MzY6NTkgUE07NDszMzE0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="luas, r" type="Real" array="False" size=""/>
+            <output expression="&quot;Panjang jari-jari:&quot;" newline="True"/>
+            <input variable="r"/>
+            <assign variable="luas" expression="pi * r * r"/>
+            <output expression="luas" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
