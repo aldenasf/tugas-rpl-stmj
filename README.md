@@ -1,5 +1,5 @@
 # Kumpulan tugas-tugas RPL
 
-|                                         |                                        |
-| :-------------------------------------: | :------------------------------------: |
-| ![aku stmj](.github/icons/aku_stmj.png) | ![aku stmj](.github/icons/aku_rpl.png) |
+|                                          |                                        |
+| :--------------------------------------: | :------------------------------------: |
+| ![Aku STMJ](.github/images/aku_stmj.png) | ![Aku RPL](.github/images/aku_rpl.png) |
