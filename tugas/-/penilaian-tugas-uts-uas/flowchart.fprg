@@ -4,9 +4,9 @@
         <attribute name="name" value="flowchart"/>
         <attribute name="authors" value="aldenasf"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2025-07-28 08:21:57 AM"/>
+        <attribute name="saved" value="2025-07-29 08:34:03 PM"/>
         <attribute name="created" value="YWxkZW5hc2Y7REVTS1RPUC1STFU1UEgzOzIwMjUtMDctMjg7MDg6MTE6MTYgQU07MzE4NA=="/>
-        <attribute name="edited" value="YWxkZW5hc2Y7REVTS1RPUC1STFU1UEgzOzIwMjUtMDctMjg7MDg6MjE6NTcgQU07MTszMjk4"/>
+        <attribute name="edited" value="YWxkZW5hc2Y7REVTS1RPUC1STFU1UEgzOzIwMjUtMDctMjk7MDg6MzQ6MDMgUE07MjszMzEw"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -20,27 +20,34 @@
             <output expression="&quot;Masukkan nilai 'uas'&quot;" newline="True"/>
             <input variable="uas"/>
             <assign variable="avg" expression="(tugas + uts + uas) / 3"/>
-            <if expression="avg &lt;= 25">
+            <if expression="avg &lt; 0">
                 <then>
-                    <assign variable="predikat" expression="&quot;cukup kurang&quot;"/>
+                    <assign variable="predikat" expression="&quot;nilai tidak valid&quot;"/>
                 </then>
                 <else>
-                    <if expression="avg &lt;= 50">
+                    <if expression="avg &lt;= 25">
                         <then>
-                            <assign variable="predikat" expression="&quot;cukup baik&quot;"/>
+                            <assign variable="predikat" expression="&quot;cukup kurang&quot;"/>
                         </then>
                         <else>
-                            <if expression="avg &lt;= 75">
+                            <if expression="avg &lt;= 50">
                                 <then>
-                                    <assign variable="predikat" expression="&quot;baik&quot;"/>
+                                    <assign variable="predikat" expression="&quot;cukup baik&quot;"/>
                                 </then>
                                 <else>
-                                    <if expression="avg &lt;= 100">
+                                    <if expression="avg &lt;= 75">
                                         <then>
-                                            <assign variable="predikat" expression="&quot;sangat baik&quot;"/>
+                                            <assign variable="predikat" expression="&quot;baik&quot;"/>
                                         </then>
                                         <else>
-                                            <assign variable="predikat" expression="&quot;nilai tidak valid&quot;"/>
+                                            <if expression="avg &lt;= 100">
+                                                <then>
+                                                    <assign variable="predikat" expression="&quot;sangat baik&quot;"/>
+                                                </then>
+                                                <else>
+                                                    <assign variable="predikat" expression="&quot;nilai tidak valid&quot;"/>
+                                                </else>
+                                            </if>
                                         </else>
                                     </if>
                                 </else>
