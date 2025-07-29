@@ -27,14 +27,16 @@
         END 
         */
 
-        let tugas = 90;
-        let uts = 84;
-        let uas = 88;
+        let tugas = 100;
+        let uts = 100;
+        let uas = 100;
 
         let avg = (tugas + uts + uas) / 3;
         let predikat = "";
 
-        if (avg <= 25) {
+        if (avg < 0) {
+            predikat = "nilai tidak valid"
+        } else if (avg <= 25) {
             predikat = "cukup kurang";
         } else if (avg <= 50) {
             predikat = "cukup baik";
