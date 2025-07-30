@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diskon berdasarkan kartu</title>
+</head>
+
+<body>
+    <script>
+        let harga = 100000;
+        let diskon = 0;
+
+        // if (harga > 500000) {
+        //     diskon = 0.2;   // 20%
+        // } else {
+        //     diskon = 0.1;   // 10%
+        // }
+
+        if (harga > 500000) {
+            diskon = 0.2;   // 20%
+        } else if (harga > 100000) {
+            diskon = 0.1;   // 10%
+        }
+
+        console.log(`harga: ${harga} | diskon: ${diskon * 100}%`);
+
+    </script>
+</body>
+
+</html>
