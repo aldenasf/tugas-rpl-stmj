@@ -14,7 +14,7 @@
         INPUT tugas, uts, uas
         PROCESS avg <- (tugas + uts + uas) / 3
         IF avg < 0 THEN
-            PROCESS preidkat <- "nilai tidak valid"
+            PROCESS predikat <- "nilai tidak valid"
         ELSE IF avg <= 25 THEN
             PROCESS predikat <- "cukup kurang"
         ELSE IF avg <= 50 THEN
