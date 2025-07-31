@@ -17,6 +17,15 @@
             output += `i: ${i}<br>`
         }
 
+        output += "<br><h2>Bilangan genap 2-10</h2><br>"
+
+        for (let i = 2; i <= 10; i++) {
+            if (i % 2 == 0) {
+                // console.log(i);
+                output += i + "<br>";
+            }
+        }
+
         document.getElementById("output").innerHTML = output;
     </script>
 </body>
