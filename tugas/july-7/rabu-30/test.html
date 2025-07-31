@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // soal buat sendiri
+        // lebih banyak kondisi lebih baik (max 4)
+
+        let tugas = 75;
+        let uts = 82;
+        let uas = 97;
+
+        let avg = (tugas + uts + uas) / 3;
+        let predikat = "";
+
+        if (avg < 0) {
+            predikat = "nilai tidak valid (avg < 0)";
+        } else if (avg <= 25) {
+            predikat = "cukup kurang";
+        } else if (avg <= 50) {
+            predikat = "baik";
+        } else if (avg <= 75) {
+            predikat = "cukup baik";
+        } else if (avg <= 100) {
+            predikat = "sangat baik";
+        } else {
+            predikat = "nilai tidak valid (avg > 100)"
+        }
+
+        console.log(`avg: ${avg} | predikat: ${predikat}`);
+    </script>
+</body>
+
+</html>
