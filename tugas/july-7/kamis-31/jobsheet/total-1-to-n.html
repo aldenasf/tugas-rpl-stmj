@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Total bilangan 1 sampai n</title>
+</head>
+
+<body>
+    <h1>Total bilangan 1 sampai n</h1>
+    <div id="output"></div>
+    <div id="output2"></div>
+    <script>
+        let n = parseInt(prompt("n"));
+        let sum = 0;
+
+        let output = `sum: ${sum}<br>`;
+        let output2 = "";
+
+        for (let i = 1; i <= n; i++) {
+            // console.log(`${sum} (+${i})`);
+            sum += i;
+            output += `(+${i}) sum: ${sum}<br>`;
+
+            if (i != 1) output2 += "+ ";
+            output2 += `${i} `;
+
+            // output += `sum: ${sum} (+${i})<br>`;
+        }
+
+        output += `<br>Total 1 sampai ${n} = ${sum}`;
+        output2 += `= ${sum}`;
+
+        document.getElementById("output").innerHTML = output;
+        document.getElementById("output2").innerHTML = output2;
+    </script>
+</body>
+
+</html>
